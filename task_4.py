@@ -26,7 +26,7 @@ def validate(line: str) -> bool:
 
 
 def main() -> None:
-    with open("input_4.csv", "r") as f:
+    with open("data/input_4.csv", "r") as f:
         for line in f.readlines():
             is_valid = validate(line)
             if is_valid:

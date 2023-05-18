@@ -50,7 +50,7 @@ def generate_line() -> str:
 
 
 def main():
-    with open("input_4.csv", "a+") as f:
+    with open("data/input_4.csv", "a+") as f:
         for i in range(20):
             f.write(generate_line() + "\n")
 
