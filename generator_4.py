@@ -2,10 +2,6 @@ import random
 import string
 from typing import Sequence
 
-import faker
-
-fake = faker.Faker()
-
 
 def generate_str(charset: Sequence[str], length: int) -> str:
     return "".join(random.choices(charset, k=length))
