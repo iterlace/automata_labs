@@ -21,15 +21,13 @@ def validate(line: str) -> bool:
     match = pattern.match(line)
     if match is None:
         return False
-    line.split()
     return True
 
 
 def main() -> None:
     with open("data/input_4.csv", "r") as f:
         for line in f.readlines():
-            is_valid = validate(line)
-            if is_valid:
+            if validate(line):
                 print(f"Line is valid: {line.strip()}")
             else:
                 print(f"Line is invalid: {line.strip()}")
