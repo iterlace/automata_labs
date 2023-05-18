@@ -2,17 +2,17 @@ import re
 
 separators = re.compile(r"")
 pattern = re.compile(
-    r"(\d{1,15})[;:?]"
-    r"([a-z\-']{1,25})[;:?]"
-    r"([a-z\d\-'\s]{1,20})[;:?]"
-    r"(L|p|S|lab)[;:?]"
-    r"([a-z\-']{1,29})[;:?]"
-    r"([a-z\-']{1,30})[;:?]"
-    r"(\d{1,5})[;:?]"
-    r"(\d{1,4})[;:?]"
-    r"(\d{1,4})[;:?]"
-    r"([a-z\d]{1,6})[;:?]"
-    r"(\d+)",
+    r"(\d{1,15})[;:?]"  # week
+    r"([a-z\-']{1,25})[;:?]"  # first_name
+    r"([a-z\d\-'\s]{1,20})[;:?]"  # subject
+    r"(L|p|S|lab)[;:?]"  # type_
+    r"([a-z\-']{1,29})[;:?]"  # midle_name
+    r"([a-z\-']{1,30})[;:?]"  # last_name
+    r"(\d{1,5})[;:?]"  # day
+    r"(\d{1,4})[;:?]"  # pair
+    r"(\d{1,4})[;:?]"  # course
+    r"([a-z\d]{1,6})[;:?]"  # group_code
+    r"(\d+)",  # auditorium
     re.I,
 )
 

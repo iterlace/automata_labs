@@ -24,7 +24,7 @@ def generate_line() -> str:
     pair = random.randint(1, 4)
     course = random.randint(1, 4)
     group_code = generate_str(string.ascii_letters + string.digits, 6)
-    auditory = random.randint(5, 100)
+    auditorium = random.randint(5, 100)
 
     parts = [
         week,
@@ -37,7 +37,7 @@ def generate_line() -> str:
         pair,
         course,
         group_code,
-        auditory,
+        auditorium,
     ]
     separators = [";", ":", "?"]
     output = ""
